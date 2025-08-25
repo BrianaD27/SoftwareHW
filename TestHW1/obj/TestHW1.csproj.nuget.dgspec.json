@@ -4,14 +4,14 @@
     "/Users/briana/Documents/SoftwareHW/TestHW1/TestHW1.csproj": {}
   },
   "projects": {
-    "/Users/briana/Documents/SoftwareHW/HW1/HW1.csproj": {
+    "/Users/briana/Documents/SoftwareHW/ClassLibraryHW1/ClassLibraryHW1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/briana/Documents/SoftwareHW/HW1/HW1.csproj",
-        "projectName": "HW1",
-        "projectPath": "/Users/briana/Documents/SoftwareHW/HW1/HW1.csproj",
+        "projectUniqueName": "/Users/briana/Documents/SoftwareHW/ClassLibraryHW1/ClassLibraryHW1.csproj",
+        "projectName": "ClassLibraryHW1",
+        "projectPath": "/Users/briana/Documents/SoftwareHW/ClassLibraryHW1/ClassLibraryHW1.csproj",
         "packagesPath": "/Users/briana/.nuget/packages/",
-        "outputPath": "/Users/briana/Documents/SoftwareHW/HW1/obj/",
+        "outputPath": "/Users/briana/Documents/SoftwareHW/ClassLibraryHW1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/briana/.nuget/NuGet/NuGet.Config"
@@ -87,8 +87,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/briana/Documents/SoftwareHW/HW1/HW1.csproj": {
-                "projectPath": "/Users/briana/Documents/SoftwareHW/HW1/HW1.csproj"
+              "/Users/briana/Documents/SoftwareHW/ClassLibraryHW1/ClassLibraryHW1.csproj": {
+                "projectPath": "/Users/briana/Documents/SoftwareHW/ClassLibraryHW1/ClassLibraryHW1.csproj"
               }
             }
           }

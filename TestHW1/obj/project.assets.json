@@ -412,14 +412,14 @@
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
       },
-      "HW1/1.0.0": {
+      "ClassLibraryHW1/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "compile": {
-          "bin/placeholder/HW1.dll": {}
+          "bin/placeholder/ClassLibraryHW1.dll": {}
         },
         "runtime": {
-          "bin/placeholder/HW1.dll": {}
+          "bin/placeholder/ClassLibraryHW1.dll": {}
         }
       }
     }
@@ -943,15 +943,15 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "HW1/1.0.0": {
+    "ClassLibraryHW1/1.0.0": {
       "type": "project",
-      "path": "../HW1/HW1.csproj",
-      "msbuildProject": "../HW1/HW1.csproj"
+      "path": "../ClassLibraryHW1/ClassLibraryHW1.csproj",
+      "msbuildProject": "../ClassLibraryHW1/ClassLibraryHW1.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "HW1 >= 1.0.0",
+      "ClassLibraryHW1 >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.12.0",
       "coverlet.collector >= 6.0.2",
       "xunit >= 2.9.2",
@@ -984,8 +984,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/briana/Documents/SoftwareHW/HW1/HW1.csproj": {
-              "projectPath": "/Users/briana/Documents/SoftwareHW/HW1/HW1.csproj"
+            "/Users/briana/Documents/SoftwareHW/ClassLibraryHW1/ClassLibraryHW1.csproj": {
+              "projectPath": "/Users/briana/Documents/SoftwareHW/ClassLibraryHW1/ClassLibraryHW1.csproj"
             }
           }
         }
