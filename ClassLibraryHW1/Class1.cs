@@ -14,32 +14,38 @@ public class Class1
         bool hasSymbol = false;
         int count = 0;
 
+        if (password.Length < 8 && password.Length != 0)
+        {
+            return "INCORRECT PASSWORD LENGTH. Passwords must have 8 characters.";
+        }
+
         for (int i = 0; i < password.Length; i++)
         {
             if (char.IsUpper(password[i]) && !hasUpperCase)
             {
                 hasUpperCase = true;
-                count ++;
+                count++;
 
             }
             else if (char.IsLower(password[i]) && !hasLowerCase)
             {
                 hasLowerCase = true;
-                count ++;
+                count++;
 
             }
             else if (char.IsDigit(password[i]) && !hasNumber)
             {
                 hasNumber = true;
-                count ++;
+                count++;
             }
             else if ((char.IsSymbol(password[1]) || char.IsPunctuation(password[i])) && !hasSymbol)
             {
                 hasSymbol = true;
-                count ++;
+                count++;
             }
 
-            if (hasUpperCase && hasLowerCase && hasNumber && hasSymbol) {
+            if (hasUpperCase && hasLowerCase && hasNumber && hasSymbol)
+            {
                 break;
             }
         }
