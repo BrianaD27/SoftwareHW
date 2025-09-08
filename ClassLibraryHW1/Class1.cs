@@ -20,11 +20,11 @@ public class Class1
     /// <param name="password">The entered string that will be evaluated as a password</param>
     public String CheckPassword(String password)
     {
-        /// <param name="hasUpperCase">Tracks if an uppercase letter exists in the password </param>
-        /// <param name="hasLowerCase">Tracks if a lowercase letter exists in the password </param>
-        /// <param name="hasNumber">Tracks if a number exists in the password </param>
-        /// <param name="hasSymbol">Tracks if a symbol exists in the password </param>
-        /// <param name="count">Tracks the number of cases that were passed</param>
+        /// <value name="hasUpperCase">Tracks if an uppercase letter exists in the password </value>
+        /// <value name="hasLowerCase">Tracks if a lowercase letter exists in the password </value>
+        /// <value name="hasNumber">Tracks if a number exists in the password </value>
+        /// <value name="hasSymbol">Tracks if a symbol exists in the password </value>
+        /// <value name="count">Tracks the number of cases that were passed</value>
         bool hasUpperCase = false;
         bool hasLowerCase = false;
         bool hasNumber = false;
