@@ -18,13 +18,12 @@ public class Class1
     /// 5. Password contains a symbol
     /// </summary>
     /// <param name="password">The entered string that will be evaluated as a password</param>
+    /// <returns>
+    /// Returns a rating of INELIGIBLE, WEAK, MEDIUM, or STRONG based on the number of requirements 
+    /// the password passes.
+    /// </returns>
     public String CheckPassword(String password)
     {
-        /// <value name="hasUpperCase">Tracks if an uppercase letter exists in the password </value>
-        /// <value name="hasLowerCase">Tracks if a lowercase letter exists in the password </value>
-        /// <value name="hasNumber">Tracks if a number exists in the password </value>
-        /// <value name="hasSymbol">Tracks if a symbol exists in the password </value>
-        /// <value name="count">Tracks the number of cases that were passed</value>
         bool hasUpperCase = false;
         bool hasLowerCase = false;
         bool hasNumber = false;
@@ -82,15 +81,9 @@ public class Class1
         }
     }
 
-    /// <summary>Generates 4 unique UUID Strings</summary>
-    public String UUIDGenerator()
+    /// <summary>Generates a version 4 UUID </summary>
+    public void UuidGenerator()
     {
-        string finalUUID = "";
-        for (int i = 0; i < 4; i++)
-        {
-            string uuid = Guid.NewGuid().ToString();
-            finalUUID += uuid + Environment.NewLine;
-        }
-        return finalUUID;
+        // create function here
     }
 }
