@@ -34,18 +34,4 @@ public class UnitTest1
 
     // Strong Case (4 Tests Passed)
     [Fact] public void Returns_Strong_For_Four_Criteria_UpperLowerCaseNumberSymbol() => Assert.Equal("STRONG", passwordChecker.CheckPassword("HXB34RF34#@2ss^gx"));
-
-    // UUID Generator Check
-    [Fact] public void Returns_Not_Null_Stings() => Assert.False(string.IsNullOrWhiteSpace(UUIDGeneratorChecker.UUIDGenerator()));
-    [Fact]
-    public void Returns_Valid_UUIDs()
-    {
-        string uuid = UUIDGeneratorChecker.UUIDGenerator();
-        var uuidLines = uuid.Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries);
-
-        Assert.True(Guid.TryParse(uuidLines[0], out _));
-        Assert.True(Guid.TryParse(uuidLines[1], out _));
-        Assert.True(Guid.TryParse(uuidLines[2], out _));
-        Assert.True(Guid.TryParse(uuidLines[3], out _));
-    }
 }

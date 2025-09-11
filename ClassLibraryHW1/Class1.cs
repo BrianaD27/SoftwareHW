@@ -82,8 +82,8 @@ public class Class1
     }
 
     /// <summary>Generates a version 4 UUID </summary>
-    public void UuidGenerator()
+    public String UuidGenerator()
     {
-        // create function here
+        return Guid.NewGuid().ToString();
     }
 }
