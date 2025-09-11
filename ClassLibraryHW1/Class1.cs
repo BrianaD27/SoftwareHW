@@ -1,11 +1,27 @@
 ﻿using System.ComponentModel;
 using System.Data.Common;
+using System.Reflection.Metadata.Ecma335;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 
 namespace ClassLibraryHW1;
 
 public class Class1
 {
+    /// <summary> 
+    /// This function rates the strength of a password as 
+    /// INELIGIBLE, WEAK, MEDIUM, or STRONG based on these requirements:
+    /// 1. Password has a length of greater than 8
+    /// 2. Password contains a lowercase letter
+    /// 3. Password contains an uppercase letter
+    /// 4. Password contains a number
+    /// 5. Password contains a symbol
+    /// </summary>
+    /// <param name="password"> The entered string that will be evaluated as a password </param>
+    /// <returns>
+    /// Returns a rating of INELIGIBLE, WEAK, MEDIUM, or STRONG based on the number of requirements 
+    /// the password passes.
+    /// </returns>
     public String CheckPassword(String password)
     {
         bool hasUpperCase = false;
@@ -58,10 +74,17 @@ public class Class1
                 return "WEAK";
             case 2 or 3:
                 return "MEDIUM";
-            case 4:
+            case 4 or 5:
                 return "STRONG";
             default:
-                return "INELIGIBLE"; 
+                return "INELIGIBLE";
         }
+    }
+
+    /// <summary> Generates a version 4 UUID </summary>
+    /// <returns> Returns a version 4 UUID string </returns>
+    public String UuidGenerator()
+    {
+        return Guid.NewGuid().ToString();
     }
 }
