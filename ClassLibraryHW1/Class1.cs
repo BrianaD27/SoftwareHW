@@ -17,7 +17,7 @@ public class Class1
     /// 4. Password contains a number
     /// 5. Password contains a symbol
     /// </summary>
-    /// <param name="password">The entered string that will be evaluated as a password</param>
+    /// <param name="password"> The entered string that will be evaluated as a password </param>
     /// <returns>
     /// Returns a rating of INELIGIBLE, WEAK, MEDIUM, or STRONG based on the number of requirements 
     /// the password passes.
@@ -81,7 +81,8 @@ public class Class1
         }
     }
 
-    /// <summary>Generates a version 4 UUID </summary>
+    /// <summary> Generates a version 4 UUID </summary>
+    /// <returns> Returns a version 4 UUID string </returns>
     public String UuidGenerator()
     {
         return Guid.NewGuid().ToString();
